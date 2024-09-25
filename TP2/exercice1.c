@@ -1,7 +1,7 @@
 #include<stdio.h>
 #include<stdbool.h>
 
-bool premier_bool(int n){
+/*bool premier_bool(int n){
 	if (n<= 1 ) {
 		return false;
 	}
@@ -30,15 +30,30 @@ int fibonacci(int n){
 		return 1;
 	}
 	return fibonacci (n-1) + fibonacci(n-2);
-}
+}*/
+
+
+
+void syracuse(int n ){
+	printf("Suite de syracuse pour %d : ",n);
+	while (n!=1){
+		printf("%d ", n); 
+		if(n%2==0) {
+			n=n/2;
+		}
+		else {
+			n=3*n+1;
+		}
+	}
+	printf("1\n");
+} 
 
 int main(){
         int nombre;
 
-        printf("Entrez un nombre: ");
+        printf("Entrez un nombre pour syracuse : ");
         scanf("%d", &nombre);
-        premier (nombre);
-	printf("Le %d-ième terme de Fibonacci est : %d\n", nombre, fibonacci(nombre));
+	syracuse(nombre);
         return 0;
 }
 
