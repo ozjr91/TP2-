@@ -1,16 +1,15 @@
-#include "fonction.h"
+#include "pascal.h"
 
-
+/* Pour compiler, il faut générer le fichier objet (.o) pascal 
+ * et les lier au main_ifndef.o pour obtenir un exécutable 
+ * gcc -std=c99 -Wall -Wextra -pedantic -ggdb -Wno-abi -o pascal.o -c pascal.c
+ * gcc -std=c99 -Wall -Wextra -pedantic -ggdb -Wno-abi -o main_ifndef.o -c main_ifndef.c
+ * gcc -std=c99 -Wall -Wextra -pedantic -ggdb -Wno-abi -o executable pascal.o main_ifndef.o fonctions.o
+ */
 
 int main() {
-    int n = 10, p = 3;
 
-    // Calcul et affichage du coefficient binomial pour n = 10 et p = 3
-    printf("Le coefficient binomial C(%d, %d) est : %d\n", n, p, coefficient(n, p));
+    pascal(6);
+    return EXIT_SUCCESS;
 
-    // Calcul et affichage du 6ème nombre de Catalan
-    int catalan_value = catalan(6);
-    printf("Le 6ème nombre de Catalan est : %d\n", catalan_value);
-
-    return 0;
 }

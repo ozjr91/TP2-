@@ -1,14 +1,8 @@
-#include "fonction.h"
+#include "fonctions.h"
 
 int main() {
-    int n, p;
-    printf("Entrez n : ");
-    scanf("%d", &n);
 
-    printf("Entrez p : ");
-    scanf("%d", &p);
+    printf("%ld\n",coefficient(12,6));
+    return EXIT_SUCCESS;
 
-    printf("Le coefficient binomial C(%d, %d) est : %d\n", n, p, coefficient(n, p));
-
-    return 0;
 }
