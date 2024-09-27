@@ -8,4 +8,5 @@
 
 #endif
 
+bool est_trie(int tableau[],size_t taille);
 int main();
