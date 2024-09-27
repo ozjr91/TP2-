@@ -21,24 +21,23 @@ int main() {
     return EXIT_SUCCESS;
 }
 
-/* Pré-condition : on suppose n >= 0*/
 long int factorielle(int n) {
-    /* Condition d'arrêt */
+
     if(n<=1) 
         return 1;
     /* Appel récursif sur le paramètre n-1 */
     return n*factorielle(n-1);
 }
 
-/* Pré-condition : on suppose n > 0 */
+
 void syracuse(int n) {
-    /* Condition d'arrêt : affichage d'un retour à la ligne */
+    
     if(n==1)
         printf("%d\n", n);
     else {
-        /* Affichage du paramètre */
+    
         printf("%d\t", n);
-        /* Appel récursif en fonction de la parité de n */
+ 
         if (n%2==0) 
             syracuse(n/2);
         else 
