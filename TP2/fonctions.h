@@ -5,7 +5,6 @@
 #include <stdlib.h>
 #include <stdio.h>
 
-long int factorielle(int);
-long int coefficient(int, int);
-
+int coefficient(int n , int p);
+void pascal(int n);
 #endif

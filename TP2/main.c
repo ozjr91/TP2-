@@ -2,7 +2,11 @@
 
 int main() {
 
-    printf("%ld\n",coefficient(12,6));
+    int n;
+    printf("Entrer un nombre : ");
+    scanf("%d",&n);
+
+    pascal(n);
     return EXIT_SUCCESS;
 
 }
